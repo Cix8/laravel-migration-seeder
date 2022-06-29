@@ -18,6 +18,7 @@
         @foreach ($trains as $train)
             <li>
                 <p><strong>Agenzia:</strong> {{ ucfirst($train->agency) }}</p>
+                <p><strong>Dettagli Treno:</strong> {{ ucfirst($train->train_type) }}</p>
                 <p><strong>Stazione di partenza:</strong> {{ $train->departure_station }}</p>
                 <p><strong>Stazione di arrivo:</strong> {{ $train->arrival_station }}</p>
                 <p><strong>Data/ora partenza:</strong> {{ $train->departure_time }}</p>
